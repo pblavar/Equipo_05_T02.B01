@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="cct">
+    <file>fondoLogin.jpg</file>
+  </qresource>
+</RCC>
