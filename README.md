@@ -1,4 +1,4 @@
-# Equipo_05_T02.B01
+# Equipo_05_T02.B02
 ## Participantes del proyecto
 - Cristina Bermúdez Castro
 - Noah Montaño Muñoz
