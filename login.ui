@@ -27,12 +27,13 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget#centralwidget{
-background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	
 }
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButtonInicio">
+   <widget class="QPushButton" name="button_inicio">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -51,7 +52,7 @@ color: white;</string>
      <string>Iniciar sesión</string>
     </property>
    </widget>
-   <widget class="QLabel" name="labelNombreUsuario">
+   <widget class="QLabel" name="label_nombre_usuario">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -61,13 +62,14 @@ color: white;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 700 10pt &quot;Tahoma&quot;;</string>
+     <string notr="true">font: 700 10pt &quot;Tahoma&quot;;
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>NOMBRE DE USUARIO</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEditUsuario">
+   <widget class="QLineEdit" name="line_edit_usuario">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -83,10 +85,22 @@ color: white;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">border: none;</string>
+     <string notr="true">QLineEdit {
+    border: none;
+    color: black;
+    border-radius: 10px;
+	background-color: rgb(0, 255, 0);
+}
+
+QLineEdit::placeholder {
+    color: gray;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEditContrasenna">
+   <widget class="QLineEdit" name="line_edit_contrasenna">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -95,11 +109,28 @@ color: white;</string>
       <height>22</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border: none;</string>
+     <string notr="true">QLineEdit {
+    border: none;
+    color: black;
+    border-radius: 10px;
+	background-color: rgb(247, 247, 247);
+}
+
+QLineEdit::placeholder {
+    color: gray;
+}</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="labelTitulo">
+   <widget class="QLabel" name="label_titulo">
     <property name="geometry">
      <rect>
       <x>125</x>
@@ -109,7 +140,8 @@ color: white;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 700 18pt &quot;Tahoma&quot;;</string>
+     <string notr="true">font: 700 18pt &quot;Tahoma&quot;;
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>La Estantería de Don Librote</string>
@@ -118,7 +150,7 @@ color: white;</string>
      <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="labelContrasenna">
+   <widget class="QLabel" name="label_contrasenna">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -128,13 +160,14 @@ color: white;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 700 10pt &quot;Tahoma&quot;;</string>
+     <string notr="true">font: 700 10pt &quot;Tahoma&quot;;
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>CONTRASEÑA</string>
     </property>
    </widget>
-   <widget class="QLabel" name="labelSubtitulo">
+   <widget class="QLabel" name="label_subtitulo">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -152,7 +185,8 @@ color: white;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 700 16pt &quot;Tahoma&quot;;</string>
+     <string notr="true">font: 700 16pt &quot;Tahoma&quot;;
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>INICIAR SESIÓN</string>
@@ -171,7 +205,7 @@ color: white;</string>
      <enum>Qt::Orientation::Horizontal</enum>
     </property>
    </widget>
-   <widget class="Line" name="lineUsuario">
+   <widget class="Line" name="line_usuario">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -184,13 +218,13 @@ color: white;</string>
      <enum>Qt::Orientation::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="labelImagen">
+   <widget class="QLabel" name="label_imagen">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>0</y>
-      <width>271</width>
-      <height>461</height>
+      <x>590</x>
+      <y>50</y>
+      <width>131</width>
+      <height>341</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -200,7 +234,7 @@ color: white;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="labelIcono">
+   <widget class="QLabel" name="label_icono">
     <property name="geometry">
      <rect>
       <x>45</x>
@@ -216,7 +250,7 @@ color: white;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButtonRegistro">
+   <widget class="QPushButton" name="button_register">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -236,7 +270,7 @@ color: white;</string>
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QMenuBar" name="menu_bar">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -245,58 +279,64 @@ color: white;</string>
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuAyuda">
+   <property name="styleSheet">
+    <string notr="true">QMenuBar{
+	background-color: rgb(255, 255, 255);
+	
+}</string>
+   </property>
+   <widget class="QMenu" name="menu_ayuda">
     <property name="title">
      <string>Ayuda</string>
     </property>
-    <addaction name="actionAcerca_de"/>
+    <addaction name="action_acerca_de"/>
    </widget>
-   <widget class="QMenu" name="menuArchivo">
+   <widget class="QMenu" name="menu_archivo">
     <property name="title">
      <string>Archivo</string>
     </property>
-    <addaction name="actionCerrar"/>
+    <addaction name="action_cerrar"/>
    </widget>
    <widget class="QMenu" name="menuEditar">
     <property name="title">
      <string>Editar</string>
     </property>
-    <addaction name="actionLimpiar_Campos"/>
+    <addaction name="action_limpiar_celdas"/>
    </widget>
-   <widget class="QMenu" name="menuIdioma">
+   <widget class="QMenu" name="menu_idioma">
     <property name="title">
      <string>Idioma</string>
     </property>
-    <addaction name="actionEspanol"/>
-    <addaction name="actionIngles"/>
+    <addaction name="action_espannol"/>
+    <addaction name="action_ingles"/>
    </widget>
-   <addaction name="menuArchivo"/>
+   <addaction name="menu_archivo"/>
    <addaction name="menuEditar"/>
-   <addaction name="menuIdioma"/>
-   <addaction name="menuAyuda"/>
+   <addaction name="menu_idioma"/>
+   <addaction name="menu_ayuda"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionLimpiar_Campos">
+  <widget class="QStatusBar" name="status_bar"/>
+  <action name="action_limpiar_celdas">
    <property name="text">
     <string>Limpiar Campos</string>
    </property>
   </action>
-  <action name="actionAcerca_de">
+  <action name="action_acerca_de">
    <property name="text">
     <string>Acerca de</string>
    </property>
   </action>
-  <action name="actionEspanol">
+  <action name="action_espannol">
    <property name="text">
     <string>Español</string>
    </property>
   </action>
-  <action name="actionIngles">
+  <action name="action_ingles">
    <property name="text">
     <string>Inglés</string>
    </property>
   </action>
-  <action name="actionCerrar">
+  <action name="action_cerrar">
    <property name="text">
     <string>Cerrar</string>
    </property>
